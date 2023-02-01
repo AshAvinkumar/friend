@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&family=Lato:ital,wght@0,100;0,400;0,700;1,100&family=Open+Sans:wght@500;600&family=Playfair+Display:wght@400;500&display=swap');
+
+
+:root{
+    --primary-color:#e50914;
+    --dark-color:#141414;
+    --light-color:#f4f4f4;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: #141414;
+    color: #f4f4f4;
+}
+
+ul{
+    list-style: none;
+}
+h1{
+    color: #f4f4f4;
+}
+p{
+   margin: 8px 0;
+}
+
+img{
+    width: 100%;
+}
+
+.showcase{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: url(https://miro.medium.com/max/1400/1*5lyavS59mazOFnb55Z6znQ.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 3px 15px 48px 13px rgba(0,0,0,0.68) inset;
+}
+.showcase::after{
+   content: "";
+   position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0, 0, 0.6);
+}
+
+.showcase-top{
+    position: relative;
+    z-index: 2;
+    height: 90px;
+}
+
+.showcase-top img{
+    width: 170px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.showcase-top button{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+}
+.btn{
+    display: inline-block;
+    background-color: var(--primary-color);
+    color:#f4f4f4;
+    padding: 7px 20px;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    margin-right: 8px;
+    box-shadow: 1px 5px 5px rgb(71, 9, 9);
+    border-radius: 2px;
+}
+.btn-rounded {
+    border-radius: 5px;
+}
+.btn-xl{
+font-size: 32px;
+padding: 24px 35px;
+}
+
+.btn-icon{
+    margin-left: 15px;
+}
+ .showcase-content{
+    position: relative;
+    z-index: 2;
+    width: 65%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 75vh;
+   
+ }
+ .showcase-content h1{
+    font-weight: 98;
+    font-size: 90px;
+    margin-bottom: 32px;
+ }
+ .showcase-content p{
+    text-transform: uppercase;
+    color: #f4f4f4;
+    font-weight: 50;
+    font-size: 32px;
+    margin-bottom: 30px;
+ }
+
+ .footer{
+    width: 70%;
+    margin: 16px auto;
+ }
+ .footer,
+ .footer a{
+    color: #939090;
+    font-size: 14px;
+ }
+
+ .footer p{
+    margin-bottom: 24px;
+ }
+ .footer-cols{
+    display: flex;
+    justify-content: space-between;
+ }
+ .footer li{
+    line-height: 1.9;
+ }
